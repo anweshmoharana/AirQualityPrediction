@@ -1,12 +1,14 @@
 # 🌫️ Air Quality Prediction
 
-A Machine Learning project that predicts air quality based on pollutant-related features using Python and Scikit-learn.
+A Machine Learning project that predicts the Air Quality Index (AQI) from major air pollutant measurements using Python and Random Forest Regression.
 
 ## 📌 Project Overview
 
-Air pollution is a major environmental problem that can affect human health and the environment.
+Air quality can be affected by different pollutants such as PM2.5, PM10, NO₂, CO, and SO₂.
 
-This project uses Machine Learning to analyze air-quality-related data and predict the Air Quality Index (AQI) and its corresponding category.
+This project demonstrates how Machine Learning can be used to learn the relationship between pollutant concentrations and AQI values.
+
+The project was developed using Jupyter Notebook and Scikit-learn.
 
 ## 🛠️ Technologies Used
 
@@ -15,40 +17,37 @@ This project uses Machine Learning to analyze air-quality-related data and predi
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
 - Scikit-learn
-- Random Forest
-
-## 🔍 Project Workflow
-
-1. Data Collection
-2. Data Cleaning
-3. Data Preprocessing
-4. Exploratory Data Analysis
-5. Data Visualization
-6. Feature Selection
-7. Model Training
-8. Model Evaluation
-9. AQI Prediction
 
 ## 🤖 Machine Learning Model
 
-The project uses **Random Forest Regression** to predict air quality based on the available pollutant features.
+**Random Forest Regression**
 
-## 📊 Features
+The model uses the following pollutant measurements as input features:
 
-- Data preprocessing
-- Exploratory data analysis
-- Data visualization
-- Machine learning model training
-- Model evaluation
-- AQI prediction
-- AQI category classification
+- PM2.5
+- PM10
+- NO₂
+- CO
+- SO₂
 
-## 📂 Project Structure
+The target variable is:
+
+- AQI (Air Quality Index)
+
+## 🔄 Project Workflow
 
 ```text
-AirQualityPrediction/
-│
-├── AirQualityPrediction.ipynb
-└── README.md
+Pollutant Data
+      ↓
+Data Preparation
+      ↓
+Exploratory Data Analysis
+      ↓
+Train-Test Split
+      ↓
+Random Forest Regression
+      ↓
+AQI Prediction
+      ↓
+Model Evaluation
